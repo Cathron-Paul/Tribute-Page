@@ -141,6 +141,29 @@ header {
     padding: 2rem;
 }
 
+.group {
+    display: flex;
+    padding: 2rem 0;
+    text-align: justify;
+    height: fit-content;
+}
+
+.sq {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 50px !important;
+    height: 50px;
+    background-color: #D4C6A3;
+}
+
+p {
+    padding-left: 2rem;
+    width:  70%;
+}
+
 .more-info {
     background-color: var(--color1);
     text-align: center;

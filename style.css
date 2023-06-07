@@ -1,0 +1,189 @@
+/*Assign color variables to root ---------------------------------------------------------*/
+:root {
+    --color1: #D4C6A3;
+    --color2: #6D523F;
+    --color3: #fffbf2;
+}
+
+/*Box-sizing to maintain element inside parent containers--------------------------------*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*font family-----------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Wendy+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quattrocento&display=swap');
+
+/*----------------------------------------------------------------------------------------*/
+
+html {
+    color: var(--color2);
+    font-family: 'Quattrocento', serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: calc(calc(1.8rem) * 1.618);
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: calc(calc(1.2rem) * 1.618);
+    font-weight: 600;
+}
+
+
+p,
+label {
+    font-size: 1.2rem;
+}
+
+header {
+    background-color: var(--color1);
+    width: 100%;
+    height: 67vw;
+}
+
+.branding {
+    padding: 0;
+    padding-top: 4.5rem;
+    text-align: center;
+}
+
+.branding h1 {
+    text-align: center;
+}
+
+.branding p {
+    text-align: center;
+}
+
+#img-div {
+    position: relative;
+    text-align: center;
+    padding: 0 2rem;
+    width: 100%;
+    height: fit-content;
+    transform: translate(0, 10%);
+}
+#image {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: calc(100%);
+    max-width: 100%;
+  }
+  
+  #img-caption {
+    position: absolute;
+    margin: auto;
+    left: 2rem;
+    right: 2rem;
+    font-size: 0.8rem;
+    line-height: 2;
+    color: var(--color3);
+    z-index: 2;
+    transform: translate(0, -20px);
+  }
+
+.sub-title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+#underline {
+    display: block;
+    background-color:  var(--color1);
+    width: 154px;
+    height: 3px;
+    margin: 1rem auto;
+}
+
+#tribute-info {
+    padding:0;
+    transform: translate(0, 20%);
+}
+
+.more-info {
+    background-color: var(--color1);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer {
+    transform: translate(0, 37%);
+}
+
+#quote {
+    margin-bottom: 2rem;
+}
+
+.copyright {
+    align-items: center;
+    background-color: var(--color2);
+    color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px;
+    padding: 4rem;
+}
+
+.copyright small {
+    font-size: 14px;
+}
+
+.copyright .left {
+    align-items: center;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.copyright .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top: 2px solid var(--color1);
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+#freeCodeCamp path {
+    fill: var(--color1);
+}
+
+#freeCodeCamp {
+    width: 100%;
+    height: auto;
+}
+
+/*media queries---------------------------------------------------------------------------*/
